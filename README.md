@@ -1,4 +1,58 @@
-# Getting Started with Create React App
+# Smalls - The web client guide
+
+## Project structure:
+  /public
+    - index.html -- html served with all the react / js bundle 
+    - robots.txt -- For google indexation purposes- really not neccesary
+  /src
+    /App
+    -- App.js
+    -- App.test.js
+    -- App.scss
+    /Posts :: The only domain the app will have
+      // All code in here
+    -- index.js -- Entry point to the app
+    -- index.scss -- Entry point to the mixins, normalzize  
+    -- normalize.scss
+    -- reset.scss
+    -- setupTests.js
+    -- variable.scss
+  .gitignore
+  .package.json
+  .package.lock.json
+
+
+- *index.html*
+HTML served with all the react / js bundle 
+- robots.txt -- For google indexation purposes- really not neccesary
+
+- *App.js*
+Main component
+
+- */Posts*
+The only domain the app will have
+All code in here
+
+- *index.js*
+Entry point to the app's source code 
+
+- *index.scss*
+Entry point for all the styling relatied stuffs -the mixins, variables, normalize, reset-
+
+- *normalize.scss*
+- *reset.scss*
+- *variable.scss*
+
+- *setupTests.js*
+Some default basic testing configuration.
+ 
+- *.gitignore*
+- *package.json*
+- *package.lock.json*
+
+
+**Note: From here not project specific** 
+# Create React App default guide
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
