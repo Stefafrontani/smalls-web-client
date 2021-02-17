@@ -1,12 +1,16 @@
+@import './variables.scss';
+
 /* MIXINS */
 @mixin heading {
     color: $color-base;
     font-size: $fontsize-headings;
+    font-weight: bold;
 }
 
 @mixin subheading {
     color: $color-base;
     font-size: $fontsize-subheadings;
+    font-weight: 600;
 }
 
 @mixin text {

@@ -1,0 +1,37 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.postsLayout {
+  background-color: $color-neutral-min;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px 40px;
+  gap: 20px;
+  overflow: hidden;
+  &__postsList {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__postDetails {
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 0px;
+    overflow: hidden;
+    @include responsive('mobile') {
+      display: none;
+    };
+    div {
+      transform: translate(120%, 0);
+    }
+    &--active {
+      max-width: 300px;
+      transition: max-width 0.3s linear 0s;
+      div {
+        transform: translate(0, 0);
+        transition: transform 0.2s ease-in-out 0.2s;
+      }
+    }
+  }
+}

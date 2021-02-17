@@ -2,23 +2,7 @@
 
 .app {
   text-align: center;
-}
-
-h1 {
-  @include heading;
-  @include responsive(mobile) {
-    background-color: red;
-  }
-}
-
-h2 {
-  @include subheading;
-}
-
-p.text {
-  @include text;
-}
-
-p.comment {
-  @include comment;
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin: auto;
 }

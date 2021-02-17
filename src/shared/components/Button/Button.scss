@@ -1,0 +1,31 @@
+@import '../../../mixins.scss';
+@import '../../../variables.scss';
+
+.button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: inherit;
+  transition: box-shadow 0.2s linear 0s;
+  &:hover, &:focus {
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow 0.2s linear 0s;
+  }
+  .imgContainer {
+    height: 15px;
+    img {
+      height: 100%;
+    }
+  }
+  .text {
+    margin-right: 8px;
+    @include text;
+  }
+}
