@@ -1,0 +1,29 @@
+@import '../../../mixins.scss';
+
+.postDetails {
+  &__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  &__body {
+    text-align: left;
+  }
+  &__date {
+    @include comment;
+  }
+  &__title {
+    margin-bottom: 4px;
+    @include heading;
+  }
+  &__author {
+    margin-bottom: 12px;
+    @include subheading;
+    span {
+      @include comment;
+    }
+  }
+  &__text {
+    @include text;
+  }
+}

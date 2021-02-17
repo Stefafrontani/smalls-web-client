@@ -1,0 +1,22 @@
+@import '../../../mixins.scss';
+@import '../../../variables.scss';
+
+.tabs {
+  text-align: left;
+  background-color: $color-bg-base;
+  &__tab {
+    @include text;
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: inherit;
+    cursor: pointer;
+    &--active {
+      margin-right: 8px;
+      background-color: $color-neutral-min;
+      pointer-events: none;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+.postCard {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    div {
+      text-align: left;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    @include heading;
+  }
+  &__subtitle {
+    @include subheading;
+  }
+  &__likeImgContainer {
+    height: 40px;
+    img {
+      height: 100%;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  &__commentImgContainer {
+    height: 15px;
+    img {
+      height: 100%;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+  &__date {
+    @include comment;
+  }
+  &__favIcon {
+    @include text;
+  }
+  &__comments {
+    @include text;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__trashIcon {
+  @include text;
+  }
+}
