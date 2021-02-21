@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-const FavButton = ({ text, icon }) => {
+const FavButton = ({ text, icon, onClick }) => {
   let ret, textElement, iconElement;
   
   if (icon) {
@@ -15,7 +15,7 @@ const FavButton = ({ text, icon }) => {
   }
 
   return (
-    <button className='button'>
+    <button onClick={onClick} className='button'>
       {textElement}
       {iconElement}
     </button>
@@ -25,11 +25,13 @@ const FavButton = ({ text, icon }) => {
 FavButton.propTypes = {
   text: PropTypes.string,
   icon: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 FavButton.defaultProps = {
   text: '',
   icon: '',
+  onClick: () => {}
 }
 
 export default FavButton;

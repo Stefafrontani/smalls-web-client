@@ -26,6 +26,7 @@
       transform: translate(120%, 0);
     }
     &--active {
+      min-width: 300px;
       max-width: 300px;
       transition: max-width 0.3s linear 0s;
       div {

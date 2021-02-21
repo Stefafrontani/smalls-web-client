@@ -12,6 +12,12 @@
   &__date {
     @include comment;
   }
+  &__imgContainer {
+    height: 15px;
+    img {
+      height: 100%;
+    }
+  }
   &__title {
     margin-bottom: 4px;
     @include heading;

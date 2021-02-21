@@ -4,6 +4,7 @@
 .postCard {
   padding: 10px 20px;
   margin-bottom: 20px;
+  position: relative;
   cursor: pointer;
   &__header {
     display: flex;
@@ -24,6 +25,32 @@
     display: flex;
     justify-content: space-between;
   }
+  .readReminder {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $color-bg-base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 100% 0;
+    transform: translateX(-100%) rotateY(90deg);
+    transition: transform 0.3s linear 0s;    
+    &__text {
+      @include text;
+      text-align: center;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  }
+  &--read {
+    .readReminder {
+      transform: translateX(-100%) rotateY(0deg);
+      transition: transform 0.3s linear 0s; 
+    }
+  }
   &__title {
     @include heading;
   }
@@ -31,7 +58,7 @@
     @include subheading;
   }
   &__likeImgContainer {
-    height: 40px;
+    height: 35px;
     img {
       height: 100%;
       display: inline-block;
@@ -44,6 +71,11 @@
       height: 100%;
       display: inline-block;
       margin-left: 5px;
+    }
+  }
+  &__img {
+    &--no-like {
+      transform: rotateX(180deg);
     }
   }
   &__date {
@@ -60,6 +92,6 @@
     align-items: center;
   }
   &__trashIcon {
-  @include text;
+    @include text;
   }
 }

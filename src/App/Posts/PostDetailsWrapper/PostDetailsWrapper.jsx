@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './PostDetailsWrapper.scss';
 import PostDetails from '../PostDetails/PostDetails';
+import './PostDetailsWrapper.scss';
 
 
 const PostDetailsWrapper = ({ postId }) => {
@@ -10,8 +10,7 @@ const PostDetailsWrapper = ({ postId }) => {
 
   return (
     <div className='postDetails'>
-      {
-        post
+      {post
         ? <PostDetails
             id={post.id}
             title={post.title}

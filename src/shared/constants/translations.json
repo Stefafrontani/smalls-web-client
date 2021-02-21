@@ -1,0 +1,16 @@
+{
+  "toBE": {
+    "redditPostId": "reddit_post_id",
+    "createdUtc": "created_utc", 
+    "isFav": "is_fav",
+    "hasImage": "has_image",
+    "numComments": "num_comments"
+  },
+  "toFE": {
+    "reddit_post_id": "redditPostId",
+    "created_utc": "createdUtc", 
+    "is_fav": "isFav",
+    "has_image": "hasImage",
+    "num_comments": "numComments"
+  }
+}
