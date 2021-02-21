@@ -68,7 +68,7 @@ The shared folder will have:
 Entry point to the app's source code. Wrapper of App.js
 
 - *index.scss*
-- *normalize.scss*\
+- *normalize.scss*
 - *reset.scss*
 - *variable.scss*
 Some general classes and rules to used along the whole project
