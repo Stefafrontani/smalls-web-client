@@ -15,7 +15,7 @@ The app enables a user to:
 ## Main techs used:
 The techs used are:\
 `react`: as the main tech to build the user interface\
-`mobx`: as a state management tool\
+`mobx`: as a state management tool
 
 
 ## Project structure:
