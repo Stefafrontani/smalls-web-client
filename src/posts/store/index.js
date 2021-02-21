@@ -1,5 +1,5 @@
 import { makeObservable, observable, runInAction, action } from 'mobx';
-import postApi from '../api';
+import postApi from 'posts/api';
 
 class PostsStore {
   posts = [];
@@ -71,7 +71,6 @@ class PostsStore {
       this.endLoading();
     })
   }
-
   getFavPosts() {
     this.startLoading();
     return this.api.getFavPosts()
@@ -82,7 +81,6 @@ class PostsStore {
       this.endLoading();
     })
   }
-
   startLoading() {
     runInAction(() => {
       this.isLoadingPosts = true;

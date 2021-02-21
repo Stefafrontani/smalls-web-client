@@ -1,8 +1,8 @@
 import './App.scss';
 import { Switch, Route } from 'react-router-dom';
-import PostsLayout from './Posts/PostsLayout/PostsLayout';
-import PostDetailsWrapper from './Posts/PostDetailsWrapper/PostDetailsWrapper';
-import { postsStore } from '../App/Posts/store';
+import PostsLayout from 'posts/ui/PostsLayout/PostsLayout';
+import PostDetailsWrapper from 'posts/ui/PostDetailsWrapper/PostDetailsWrapper';
+import { postsStore } from 'posts/store';
 
 function App() {
   return (

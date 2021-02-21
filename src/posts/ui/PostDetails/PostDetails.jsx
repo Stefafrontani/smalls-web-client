@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './PostDetails.scss';
-import FilledHeartIcon from '../../../shared/icons/filled-heart.png';
-import EmptyHeartIcon from '../../../shared/icons/empty-heart.png';
-import { getTimePassedFromDate } from '../../../shared/utils/dates';
+import FilledHeartIcon from 'shared/icons/filled-heart.png';
+import EmptyHeartIcon from 'shared/icons/empty-heart.png';
+import { getTimePassedFromDate } from 'shared/utils/dates';
 
 const PostDetails = ({ post }) => {
   const { id, title, author, body, createdUtc, isFav } = post; 

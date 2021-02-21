@@ -1,4 +1,4 @@
-import { translateObject } from '../../../shared/utils/translations';
+import { translateObject } from 'shared/utils/translations';
 
 function getPosts() {
   return fetch('https://www.reddit.com/r/redditdev/top.json')

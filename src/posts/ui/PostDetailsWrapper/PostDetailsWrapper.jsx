@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PostDetails from '../PostDetails/PostDetails';
+import PostDetails from 'posts/ui/PostDetails/PostDetails';
 import './PostDetailsWrapper.scss';
-
 
 const PostDetailsWrapper = ({ postId }) => {
   const posts = [{ id: 1 }]

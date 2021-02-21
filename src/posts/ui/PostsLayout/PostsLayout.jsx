@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { observer } from 'mobx-react';
-import PostDetails from '../PostDetails/PostDetails';
-import PostsList from '../PostsList/PostsList';
-import Tabs from '../Tabs/Tabs';
-import Loader from '../../../shared/components/Loader/Loader';
-import usePostsUrlParam from '../../../shared/hooks/usePostsUrlParam';
+import PostDetails from 'posts/ui/PostDetails/PostDetails';
+import PostsList from 'posts/ui/PostsList/PostsList';
+import Tabs from 'posts/ui/Tabs/Tabs';
+import Loader from 'shared/components/Loader/Loader';
+import usePostsUrlParam from 'shared/hooks/usePostsUrlParam';
 import './PostsLayout.scss';
 
 const PostsLayout = observer(({ postsStore }) => {

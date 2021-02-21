@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { postsStore } from '../../App/Posts/store';
+import { postsStore } from 'posts/store';
 
 const usePostsUrlParam = () => {
   const history = useHistory();
