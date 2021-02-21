@@ -1,124 +1,106 @@
-# Smalls - The web client guide
+# Smalls - The WEB CLIENT guide
+
+
+## Description:
+The app enables a user to:
+- see the top posts listed in [reddit's][https://www.reddit.com/r/redditdev/top.json] api 
+- save the posts you like using a custom api *(smalls-be)*
+- removing the posts you fav before
+- identify your favourite posts in the reddit's list
+- see only your fav posts 
+- dismiss a post
+- refresh the page calling reddit's and custom api again
+
+
+## Main techs used:
+The techs used are:
+`react`: as the main tech to build the user interface
+`mobx`: as a state management tool 
+
 
 ## Project structure:
-  /public
-    - index.html -- html served with all the react / js bundle 
-    - robots.txt -- For google indexation purposes- really not neccesary
-  /src
-    /App
-    -- App.js
-    -- App.test.js
-    -- App.scss
-    /Posts :: The only domain the app will have
-      // All code in here
-    -- index.js -- Entry point to the app
-    -- index.scss -- Entry point to the mixins, normalzize  
-    -- normalize.scss
-    -- reset.scss
-    -- setupTests.js
-    -- variable.scss
-  .gitignore
-  .package.json
-  .package.lock.json
-
+  ./public
+    -- index.html\ 
+    -- robots.txt\
+  ./src\
+    ./App\
+      -- App.js\
+      -- App.test.js\
+      -- App.scss\
+    ./posts\
+    ./shared\
+    -- index.js\
+    -- index.scss\  
+    -- normalize.scss\
+    -- reset.scss\
+    -- setupTests.js\
+    -- variable.scss\
+  -- gitignore
+  -- package.json
+  -- package.lock.json
+  -- readme.md
 
 - *index.html*
 HTML served with all the react / js bundle 
-- robots.txt -- For google indexation purposes- really not neccesary
 
-- *App.js*
-Main component
+- *robots.txt*
+For google indexation purposes - really not neccesary
 
-- */Posts*
+- *./App*
+Main entry to the app components tree.
+
+- *./posts*
 The only domain the app will have
-All code in here
+The domain will have: 
+  *./api*: The services that consumed the reddi'ts and custom apis\
+  *./store*: The class that keeps track of the state of the app\
+  *./ui*: User interface related components\
+
+.*/shared*\
+Some things that is common to used between domains
+The shared folder will have:
+  *./components*: User interface related components\
+  *./constants*\
+  *./hooks*: Custom hooks\
+  *./icons*: Some images\
+  *./utils*\
 
 - *index.js*
-Entry point to the app's source code 
+Entry point to the app's source code. Wrapper of App.js
 
 - *index.scss*
-Entry point for all the styling relatied stuffs -the mixins, variables, normalize, reset-
-
 - *normalize.scss*
 - *reset.scss*
 - *variable.scss*
+Some general classes and rules to used along the whole project
+These files includes some reset styles, general styles, variables and mixins
 
 - *setupTests.js*
 Some default basic testing configuration.
  
-- *.gitignore*
+- *gitignore*
+
+- *craco.config.js*
+Some config used by the dependency with the same name craco to allow some webpack configs without ejecting the project
+
+- *config.js*
+Some general project's settings *(i.e.: aliases for importing)*
+
 - *package.json*
 - *package.lock.json*
+The files that keep track of the dependency list used in the project
 
+- *readme.md*
+Hi there.
 
-**Note: From here not project specific** 
-# Create React App default guide
+## Requirements and Installation:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) Download and install python and pip:
+[node][https://nodejs.org/es/download/]
 
-## Available Scripts
+2) Install all the project dependencies
+In the root of the project run *$ npm install pipenv*
 
-In the project directory, you can run:
+## Running the server
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+On the root of the project run: *$ npm start*
