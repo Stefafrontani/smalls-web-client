@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PostCard from '../PostCard/PostCard';
-import Paper from '../../../shared/components/Paper/Paper';
+import PostCard from 'posts/ui/PostCard/PostCard';
+import Paper from 'shared/components/Paper/Paper';
 import './PostsList.scss';
 
 const PostsList = ({ posts, postBeenFavvedId, handlePostClick }) => {

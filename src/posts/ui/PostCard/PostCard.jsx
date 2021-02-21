@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'
-import { postsStore } from '../store';
-import Button from '../../../shared/components/Button/Button';
-import LikeIcon from '../../../shared/icons/like.png';
-import FilledHeartIcon from '../../../shared/icons/filled-heart.png';
-import EmptyHeartIcon from '../../../shared/icons/empty-heart.png';
-import CommentIcon from '../../../shared/icons/comment.png';
-import TrashcanIcon from '../../../shared/icons/trashcan.png';
-import { getTimePassedFromDate } from '../../../shared/utils/dates';
-import { translateObject } from '../../../shared/utils/translations';
+import { postsStore } from 'posts/store';
+import Button from 'shared/components/Button/Button';
+import LikeIcon from 'shared/icons/like.png';
+import FilledHeartIcon from 'shared/icons/filled-heart.png';
+import EmptyHeartIcon from 'shared/icons/empty-heart.png';
+import CommentIcon from 'shared/icons/comment.png';
+import TrashcanIcon from 'shared/icons/trashcan.png';
+import { getTimePassedFromDate } from 'shared/utils/dates';
+import { translateObject } from 'shared/utils/translations';
 import './PostCard.scss';
 
 
