@@ -20,7 +20,7 @@ The techs used are:\
 
 ## Project structure:
   ./public\
-    -- index.html\ 
+    -- index.html\
     -- robots.txt\
   ./src\
     ./App\
