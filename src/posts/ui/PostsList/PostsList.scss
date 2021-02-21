@@ -6,3 +6,31 @@
     @include heading;
   }
 }
+
+.pagination {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    text-align: center;
+    padding: 10px 10px;
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+  &__pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .pages {
+    &__number {
+      @include text;
+      &--current {
+        @include heading;
+      }
+    }
+  }
+}
