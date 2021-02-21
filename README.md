@@ -3,7 +3,7 @@
 
 ## Description:
 The app enables a user to:
-- see the top posts listed in [reddit's][https://www.reddit.com/r/redditdev/top.json] api 
+- see the top posts listed in [reddit's](https://www.reddit.com/r/redditdev/top.json) api 
 - save the posts you like using a custom api *(smalls-be)*
 - removing the posts you fav before
 - identify your favourite posts in the reddit's list
@@ -96,11 +96,11 @@ Hi there.
 ## Requirements and Installation:
 
 1) Download and install python and pip:
-[node][https://nodejs.org/es/download/]
+[node](https://nodejs.org/es/download/)
 
 2) Install all the project dependencies
 In the root of the project run *$ npm install pipenv*
 
 ## Running the server
 
-On the root of the project run: *$ npm start*
+On the root of the project run: *$ npm start* and visist *http://localhost:3000*
