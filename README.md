@@ -50,34 +50,34 @@ For google indexation purposes - really not neccesary
 Main entry to the app components tree.
 
 - *./posts*\
-The only domain the app will have and will include:\
-  - *./api*: The services that consumed the reddi'ts and custom apis\
-  - *./store*: The class that keeps track of the state of the app\
-  - *./ui*: User interface related components\
+The only domain the app will have and will include:
+  - *./api*: The services that consumed the reddi'ts and custom apis
+  - *./store*: The class that keeps track of the state of the app
+  - *./ui*: User interface related components
 
 - .*/shared*\
 Some things that is common to used between domains\
-The shared folder will have:\
-  - *./components*: User interface related components\
-  - *./constants*\
-  - *./hooks*: Custom hooks\
-  - *./icons*: Some images\
-  - *./utils*\
+The shared folder will have:
+  - *./components*: User interface related components
+  - *./constants*
+  - *./hooks*: Custom hooks
+  - *./icons*: Some images
+  - *./utils*
 
 - *index.js*
 Entry point to the app's source code. Wrapper of App.js
 
-- *index.scss*\
+- *index.scss*
 - *normalize.scss*\
-- *reset.scss*\
-- *variable.scss*\
+- *reset.scss*
+- *variable.scss*
 Some general classes and rules to used along the whole project
 These files includes some reset styles, general styles, variables and mixins
 
 - *setupTests.js*\
 Some default basic testing configuration.
  
-- *gitignore*\
+- *gitignore*
 
 - *craco.config.js*\
 Some config used by the dependency with the same name craco to allow some webpack configs without ejecting the project
