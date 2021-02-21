@@ -85,7 +85,7 @@ Some config used by the dependency with the same name craco to allow some webpac
 - *config.js*\
 Some general project's settings *(i.e.: aliases for importing)*
 
-- *package.json*\
+- *package.json*
 - *package.lock.json*\
 The files that keep track of the dependency list used in the project
 
@@ -94,11 +94,11 @@ Hi there.
 
 ## Requirements and Installation:
 
-1) Download and install python and pip:
+1) Download and install:
 [node](https://nodejs.org/es/download/)
 
 2) Install all the project dependencies
-In the root of the project run *$ npm install pipenv*
+In the root of the project run *$ npm install*
 
 ## Running the server
 
