@@ -35,4 +35,12 @@
       }
     }
   }
+  &__footer {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: flex-end;
+    button {
+      @include heading;
+    }
+  }
 }

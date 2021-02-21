@@ -4,6 +4,7 @@ import PostDetails from 'posts/ui/PostDetails/PostDetails';
 import PostsList from 'posts/ui/PostsList/PostsList';
 import Tabs from 'posts/ui/Tabs/Tabs';
 import Loader from 'shared/components/Loader/Loader';
+import Button from 'shared/components/Button/Button';
 import usePostsUrlParam from 'shared/hooks/usePostsUrlParam';
 import './PostsLayout.scss';
 
@@ -40,6 +41,14 @@ const PostsLayout = observer(({ postsStore }) => {
           </div>
         </aside>
       </main>
+      {!postsStore.isLoadingPosts &&
+        <div className="postsLayout__footer">
+          <Button
+            onClick={() => postsStore.getAllPosts()}
+            text={'Go back in time-ish'}
+          />
+        </div>
+      }
     </React.Fragment>
   )
 });
