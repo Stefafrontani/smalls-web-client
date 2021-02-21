@@ -19,7 +19,7 @@ The techs used are:
 
 
 ## Project structure:
-  ./public
+  ./public\
     -- index.html\ 
     -- robots.txt\
   ./src\
