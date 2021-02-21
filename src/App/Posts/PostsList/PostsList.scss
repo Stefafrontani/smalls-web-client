@@ -1,1 +1,8 @@
-.postsList {}
+@import '../../../mixins.scss';
+
+.postsList {
+  position: relative;
+  &__noPosts {
+    @include heading;
+  }
+}
